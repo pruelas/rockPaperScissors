@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<header>
+    <link rel="stylesheet" href="RockPaperScissors.css">
+</header>
+<body>
+    <h1>Rock, Paper, Scissors!</h1>
+    <h2>First to 5 Wins!</h2>
+    <div id="startingDisplay">
+        <h2>Play Against a Computer!</h2>
+        <br>
+        <h2> What's your first move?</h2>
+        <br>
+
+        <div id="selections">
+            <button id = "selection">Rock</button>
+            <button id = "selection">Paper</button>
+            <button id = "selection">Scissors</button>     
+        </div>
+        
+
+     <!--   <h2><button id="playGame">Play Game!</button></h2> -->
+
+    </div>
+    
+    <div id="startGame" style="display:none;">
+        <div id="results">
+            <h3> Results</h3>
+            <div id="round">test</div>
+        </div>
+
+        <div id = "scores">
+            <h3>Scores</h3>
+            <div id="scoreLabels">
+                <h4 id="wins">Wins</h4>
+                <h4 id="losses">Losses</h4>
+                <h4 id="ties">Ties</h4>
+            </div>
+            <div id="scoreTally">
+                <h4>0</h4>
+                <h4>0</h4>
+                <h4>0</h4>
+            </div>
+        </div>
+    </div>
+    
+    <div id="endGame" style="display: none;">
+        
+        <h3>
+       <button id="playGame">Play again!</button></h3> 
+
+        <!--buttons to play game --> 
+        <div id="selections">
+            <button id = "selection">Rock</button>
+            <button id = "selection">Paper</button>
+            <button id = "selection">Scissors</button>
+            
+        </div>
+
+        <div id='results'></div>
+
+
+
+    </div>
+
+</body>
+<footer>
+    <script src = "RockPaperScissors.js"></script>
+</footer>
+</html>

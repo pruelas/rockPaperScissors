@@ -1,0 +1,121 @@
+body{
+    max-height: 100%;
+    max-width:100%;
+}
+
+#startingDisplay{
+    border: solid;
+}
+
+#playGame{
+    margin:auto;
+    border: solid;
+    width: 10rem;
+    height: 3rem;
+    text-align: center;
+    cursor:pointer;
+    
+}
+
+#playGame:hover{
+    background-color:khaki;
+}
+/*
+button{
+    color:black;
+    background-color: white;
+    height: 3em;
+    width: 5em;
+    font-size: 1rem;
+}*/
+
+h1{
+    color: black;
+    margin: 10% auto auto auto;
+    text-align: center;
+    outline: solid;
+}
+
+h2{
+    color: black;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+h3{
+    outline: solid;
+    text-align: center;
+}
+
+#scoreLabels{
+    display: flex;
+    flex-direction: row;
+    width: 50em;
+    margin: 0 auto;
+    border: steelblue;
+    border-style: dotted;
+    justify-self: center;
+}
+
+#scoreTally{
+    display: flex;
+    flex-direction: row;
+    width: 50em;
+    margin: 0 auto;
+    border: steelblue;
+    border-style: dotted;
+}
+
+h4{
+    margin: 2em auto;
+    width: 10em;
+    text-align: center;
+    border: black;
+    border-style: solid;
+}
+
+h5{
+    margin-left: 5em;
+    /*width: 10em;*/
+    text-align: right;
+    border: solid;
+}
+
+#selections{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    border: solid;
+}
+
+#selection{
+    margin:auto 1em;
+    border: solid;
+    width: 10rem;
+    height: 3rem;
+    text-align: center;
+    cursor:pointer;
+    
+}
+
+#selection:hover{
+    background-color:khaki;
+}
+
+#results{
+    margin: auto;
+    margin-top: 1em;
+    text-align: center;
+}
+
+#endGame{
+    position:absolute;
+    z-index: 1000;
+    margin: -5em auto;
+    width: 100%;
+    height: 60%;
+    background-color: khaki;
+    border: solid;
+}
