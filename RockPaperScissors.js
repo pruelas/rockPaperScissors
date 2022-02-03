@@ -94,7 +94,7 @@ function startGame(){
   const startGame = document.getElementById("startGame");
   startGame.style.display = "initial";
 
-}
+};
 
 function endGame(){
     const endGame = document.getElementById("endGame");
@@ -115,21 +115,17 @@ function endGame(){
     
 
 
-}
+};
 
 window.addEventListener('click', function(e){
     
-    console.log(e.target.textContent, scores);
-    if(e.target.nodeName == "BUTTON"){
-        if(round == 0){ 
-        //hide starGame div and unhide the gameDisplay
-        const startingDisplay = document.getElementById("startingDisplay");
-        console.log(startingDisplay.style.display);
-        startingDisplay.style.display = "none";
-        const startGame = document.getElementById("startGame");
-        startGame.style.display = "initial";
-        }
-
+    console.log(e.target.textContent, scores, e.target.nodeName);
+    if(e.target.nodeName !== "BUTTON") 
+    {
+        return;
+    }else if(e.target.textContent === "Play Game!"){
+        startGame();
+        return;
     }else if(e.target.textContent === "Play again!"){
         scores[0] = 0;
         scores[1] = 0;
@@ -141,13 +137,10 @@ window.addEventListener('click', function(e){
         scoreTally.children[0].textContent = "Scores";
         startGame.prepend(scoreTally);
         playAgain.removeChild(playAgain.firstChild);
-        // playAgain.removeChild(playAgain.lastChild);
+       // playAgain.removeChild(playAgain.lastChild);
         removeLastGame();
         updateScores();
         startGame();
-        return;
-    
-    }else{
         return;
     }
     removeLastGame();
@@ -163,6 +156,7 @@ window.addEventListener('click', function(e){
     }
     console.log(selection);
 });
+
 
 /** 
 const selections = document.querySelectorAll('button');
